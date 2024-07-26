@@ -1,0 +1,98 @@
+.hero{
+    width: 100%;
+    height: 80vh;
+    background: url('../../assets/bg-img.jpg' ) ;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 20px;
+    position: relative;
+    animation: fadeIn 3s;
+}
+
+.hero .hero_content{
+ position: absolute;
+ display: flex;
+ flex-direction: column;
+ align-items: start;
+ gap: 1.5vw;
+ max-width: 40%;
+ bottom: 10%;
+ left: 3vw;
+ animation: fadeIn 3s;
+} 
+
+.hero_content h1{
+    font-size: 4vw;
+    color: #fff;
+}
+
+
+.hero_content p{
+  color: #fff;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1024px) {
+ .hero{
+    height: 70vh;
+ }
+ .hero .hero_content{
+    max-width: 50%;
+ }
+ .hero_content h1{
+    font-size: 5vw;
+ }
+}
+
+@media (max-width: 770px) {
+    .hero{
+       height: 50vh;
+    }
+    .hero .hero_content{
+       max-width: 50%;
+    }
+   
+    .hero_content h1{
+        font-size: 3vw;
+     }
+     .hero_content p{
+        font-size: 0.8rem;
+     }
+     .btn{
+        padding: 8px 20px;
+        font-size: 0.8rem;
+     }     
+   }
+
+   
+@media (max-width: 600px) {
+    .hero{
+       height: 40vh;
+    }
+    .hero .hero_content{
+       max-width: 50%;
+    }
+   
+    .hero_content h1{
+        font-size: 4vw;
+     }
+     .hero_content p{
+        font-size: 0.5rem;
+     }
+     .btn{
+        padding: 5px 10px;
+        font-size: 0.5rem;
+     }     
+   }
+
+
+
+@media (max-width: 330px) {
+    .hero{
+        width: 100%;
+        height: 20vh;
+     }
+     .hero .hero_content{
+        display: none;
+     }
+}
